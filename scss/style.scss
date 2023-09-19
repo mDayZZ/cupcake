@@ -1,0 +1,234 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 125% */
+    letter-spacing: -1px;
+
+    @media(max-width: 768px){
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 278px;
+    }
+}
+
+h2{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px; /* 125% */
+    letter-spacing: -1px;
+
+    
+}
+
+
+.header {
+    background-image: url(/img/header_bg.png);
+    background-color: lightgray;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 485px;
+    color: white;
+    position: relative;
+    z-index: -2;
+
+    @media(max-width:1024px){
+        background-position: right;
+        ::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: #0f12140f;
+            z-index: -1;
+        }
+    }
+
+    
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+
+        @media (max-width:768px){
+            flex-wrap: wrap;
+            gap: 20px;
+            
+        }
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70px;
+        
+
+    }
+
+    &__location-group {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    &__location-text {
+        max-width: 120px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+
+    }
+
+    &__contacts-group {
+        max-width: 180px;
+        left: -18px;
+    }
+
+    &__contacts-number {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 152%;
+
+    }
+
+    &__contacts-text {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    &__content {
+        max-width: 650px;
+        //margin-top: 230px;
+        margin-top: 18vh;
+        @media(max-width: 1024px){
+            //background-color: #0f1214c5;
+            //padding: 50px 40px;
+            border-radius: 5px;
+        }
+        
+        @media(max-width: 768px) {
+            margin-top: 25vh;
+            
+        }
+    }
+
+    &__supertitle {
+        display: inline-block;
+        text-transform: uppercase;
+        
+        padding: 12px 18px;
+        background-color: #F2F6FA;
+        color: #2E363E;
+        border-radius: 5px;
+
+        @media(max-width: 768px){
+            font-size: 8px;
+        }
+    }
+
+    &__title {
+        margin-top: 24px;
+        max-width: 650px;
+        @media(max-width: 768px){
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 278px;
+        }
+    }
+
+    &__description {
+        margin-top: 24px;
+        max-width: 540px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143%;
+        @media(max-width: 768px){
+            font-size: 12px;
+            max-width: 140px;
+        }
+
+    }
+
+    &__btn-group {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        margin-top: 40px;
+        justify-content: space-between;
+        max-width: 500px;
+        gap: 20px;
+
+        @media(max-width: 768px){
+            flex-wrap: wrap;
+            margin-top: 20px;
+
+        }
+    }
+
+    &__btn {
+        padding: 30px 50px;
+        text-wrap: nowrap;
+        @media(max-width: 768px){
+            font-size: 12px;
+            padding: 15px 25px;
+        }
+    }
+
+    &__btn-description {
+        max-width: 180px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+    }
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    @media(max-width:1280px){
+        margin: 0 20px;
+    }
+}
+.logo {
+
+    &__link {
+    }
+
+    &__img {
+    }
+}
+.btn {
+    background-color: #FED84C;
+    color: #2E363E;
+    border-radius: 8px;
+    font-family: Montserrat;
+    //font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 152%
+}
+
+

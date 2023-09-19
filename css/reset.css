@@ -1,0 +1,85 @@
+/* Reset CSS */
+/* Этот файл сбрасывает стандартные стили браузера для более последовательного начального состояния */
+
+/* Сброс отступов и полей для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+html{
+    box-sizing: border-box;
+  }
+
+*,
+*::before,
+*::after{
+    box-sizing:inherit;
+  }
+  
+  /* Сброс стандартных стилей для тегов */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  li,
+  dl,
+  dt,
+  dd,
+  blockquote,
+  figure,
+  fieldset,
+  legend,
+  textarea,
+  pre,
+  iframe,
+  hr,
+  table,
+  caption,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Сброс стилей для списков */
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  /* Сброс стилей для ссылок */
+  a {
+    text-decoration: none;
+    color:inherit;
+  }
+  
+  /* Сброс стандартных стилей для форм */
+  button,
+  input,
+  select,
+  textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    resize: none; /* Запрет на изменение размера текстовых полей */
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+
+  
+  /* Этот файл сброса стилей можно расширить и настроить по своему усмотрению, чтобы соответствовать вашим потребностям. */
+  
