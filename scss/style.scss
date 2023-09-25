@@ -28,6 +28,22 @@ h2{
 }
 
 
+
+.supertitle{
+    display: inline-block;
+    text-transform: uppercase;
+
+    padding: 10px 18px;
+    font-size: 11px;
+    background-color: #F2F6FA;
+    color: #2E363E;
+    border-radius: 5px;
+
+    @media(max-width: 768px){
+        font-size: 8px;
+    }
+}
+
 .header {
     background-image: url('../img/header_bg.png');
     background-color: lightgray;
@@ -325,18 +341,7 @@ h2{
     }
 
     &__supertitle {
-        display: inline-block;
-        text-transform: uppercase;
         
-        padding: 10px 18px;
-        font-size: 11px;
-        background-color: #F2F6FA;
-        color: #2E363E;
-        border-radius: 5px;
-
-        @media(max-width: 768px){
-            font-size: 8px;
-        }
     }
 
     &__title {
@@ -385,6 +390,82 @@ h2{
 
     &__cloud--down {
         background-image: url(/img/byphoto_cloud-down.png);
+    }
+}
+
+.author {
+    margin-top: 20px;
+    position: relative;
+
+
+    
+    
+    
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        max-width: 580px;
+    }
+
+    &__supertitle {
+    }
+
+    &__title {
+        margin-top: 24px;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 60px; /* 125% */
+        letter-spacing: -1px;
+    }
+
+    &__list {
+        margin-top: 36px;
+        list-style-type: circle;
+        list-style-position: inside;
+        max-width: 440px;
+        }
+
+    &__list-item {
+        padding-bottom: 30px;
+    }
+
+    &__btn {
+        margin-top: 20px;
+        padding: 30px 50px;
+    }
+
+    &__photo {
+        max-width: 580px;
+    }
+}
+
+
+.reviews {
+    position: relative;
+    background-color:#081130;
+
+    &__cloud {
+        position: relative;
+        width: 100vw;
+        height: 330px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
+    
+    &__cloud--up {
+        background-image: url(/img/byphoto_cloud-up.png);
+    }
+
+    &__block {
+        height: 200px;
     }
 }
 
