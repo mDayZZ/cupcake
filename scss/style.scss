@@ -249,8 +249,9 @@ h2{
 		}
 
 		&__item-img {
-            width: 380px;
-            height: 245px;
+            //max-width: 380px;
+            max-width: 100%;
+            max-height: 245px;
             border-radius: 10px 10px 0px 0px;
 		}
 
@@ -408,6 +409,14 @@ h2{
         flex-wrap: wrap;
     }
 
+    @media (max-width: 1280px){
+        &__inner {
+            flex-direction: column-reverse;
+            gap: 50px;
+            align-items: center;
+        }
+    }
+
     &__info {
         max-width: 580px;
     }
@@ -441,7 +450,9 @@ h2{
     }
 
     &__photo {
+        width: 100%;
         max-width: 580px;
+        
     }
 }
 
